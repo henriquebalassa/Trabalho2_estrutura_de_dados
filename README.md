@@ -8,9 +8,9 @@ Disciplina: Estrutura de Dados (ECO, Engenharia de Computação, IFC São Bento 
 
 ## Integrantes
 
-- Henrique Balassa
-- Laura Veiga
-- Saulo Resende
+- Henrique Balassa Avancini
+- Laura Veiga Mondin
+- Saulo Santos Resende
 
 ## Dataset
 
