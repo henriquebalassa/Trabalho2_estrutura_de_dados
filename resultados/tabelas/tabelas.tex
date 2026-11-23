@@ -1,0 +1,217 @@
+% Tabelas geradas por scripts/gerar_graficos.py. Copie as que for usar no artigo.
+
+\begin{table}[ht]
+\centering
+\caption{Tempo de ordena\c{c}\~ao (ms), chave timestamp, n = 10.000. M\'edia $\pm$ desvio-padr\~ao de 5 repeti\c{c}\~oes. * = execu\c{c}\~ao \'unica (acima de 20 s n\~ao se repete). $>$ 120 s = execu\c{c}\~ao interrompida no limite de tempo. }
+\label{tab:tempo-timestamp-10000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 0,46 $\pm$ 0,13 & 263,0 $\pm$ 24,5 & 102,0 $\pm$ 0,93 \\
+Selection Sort & 217,0 $\pm$ 0,96 & 207,5 $\pm$ 61,7 & 136,1 $\pm$ 10,1 \\
+Quick Sort (piv\^o: primeiro) & 138,3 $\pm$ 4,17 & 203,0 $\pm$ 9,20 & 2,33 $\pm$ 0,42 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 1,06 $\pm$ 0,05 & 1,19 $\pm$ 0,10 & 2,20 $\pm$ 0,01 \\
+Quick Sort (piv\^o: aleat\'orio) & 1,43 $\pm$ 0,09 & 1,64 $\pm$ 0,09 & 2,50 $\pm$ 0,34 \\
+Merge Sort & 1,11 $\pm$ 0,23 & 1,33 $\pm$ 0,24 & 2,54 $\pm$ 0,45 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Tempo de ordena\c{c}\~ao (ms), chave timestamp, n = 100.000. M\'edia $\pm$ desvio-padr\~ao de 5 repeti\c{c}\~oes. * = execu\c{c}\~ao \'unica (acima de 20 s n\~ao se repete). $>$ 120 s = execu\c{c}\~ao interrompida no limite de tempo. }
+\label{tab:tempo-timestamp-100000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 2,35 $\pm$ 0,30 & 30.615* & 14.988 $\pm$ 96,4 \\
+Selection Sort & 23.448* & 23.007* & 19.109 $\pm$ 958,4 \\
+Quick Sort (piv\^o: primeiro) & 21.787* & 29.835* & 26,6 $\pm$ 0,71 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 12,1 $\pm$ 0,05 & 13,2 $\pm$ 0,32 & 26,1 $\pm$ 0,49 \\
+Quick Sort (piv\^o: aleat\'orio) & 18,2 $\pm$ 0,29 & 19,5 $\pm$ 0,96 & 27,9 $\pm$ 0,54 \\
+Merge Sort & 11,9 $\pm$ 0,36 & 15,6 $\pm$ 0,21 & 29,5 $\pm$ 0,69 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Tempo de ordena\c{c}\~ao (ms), chave timestamp, n = 1.000.000. M\'edia $\pm$ desvio-padr\~ao de 5 repeti\c{c}\~oes. * = execu\c{c}\~ao \'unica (acima de 20 s n\~ao se repete). $>$ 120 s = execu\c{c}\~ao interrompida no limite de tempo. }
+\label{tab:tempo-timestamp-1000000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 33,9 $\pm$ 0,30 & $>$ 120 s & $>$ 120 s \\
+Selection Sort & $>$ 120 s & $>$ 120 s & $>$ 120 s \\
+Quick Sort (piv\^o: primeiro) & $>$ 120 s & $>$ 120 s & 311,6 $\pm$ 2,46 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 130,8 $\pm$ 36,1 & 142,9 $\pm$ 2,36 & 319,8 $\pm$ 2,10 \\
+Quick Sort (piv\^o: aleat\'orio) & 164,9 $\pm$ 1,00 & 190,7 $\pm$ 1,52 & 324,8 $\pm$ 0,75 \\
+Merge Sort & 216,2 $\pm$ 7,05 & 265,3 $\pm$ 1,34 & 444,8 $\pm$ 6,66 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Tempo de ordena\c{c}\~ao (ms), chave nota, n = 10.000. M\'edia $\pm$ desvio-padr\~ao de 5 repeti\c{c}\~oes. * = execu\c{c}\~ao \'unica (acima de 20 s n\~ao se repete). $>$ 120 s = execu\c{c}\~ao interrompida no limite de tempo. }
+\label{tab:tempo-nota-10000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 0,21 $\pm$ 0,02 & 163,8 $\pm$ 0,78 & 77,9 $\pm$ 0,34 \\
+Selection Sort & 127,1 $\pm$ 2,59 & 127,9 $\pm$ 1,26 & 114,8 $\pm$ 1,14 \\
+Quick Sort (piv\^o: primeiro) & 2,51 $\pm$ 0,09 & 2,04 $\pm$ 0,03 & 1,47 $\pm$ 0,01 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 1,57 $\pm$ 0,07 & 1,54 $\pm$ 0,11 & 1,66 $\pm$ 0,01 \\
+Quick Sort (piv\^o: aleat\'orio) & 1,29 $\pm$ 0,02 & 1,41 $\pm$ 0,08 & 1,57 $\pm$ 0,02 \\
+Merge Sort & 0,85 $\pm$ 0,03 & 0,92 $\pm$ 0,06 & 1,45 $\pm$ 0,01 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Tempo de ordena\c{c}\~ao (ms), chave nota, n = 100.000. M\'edia $\pm$ desvio-padr\~ao de 5 repeti\c{c}\~oes. * = execu\c{c}\~ao \'unica (acima de 20 s n\~ao se repete). $>$ 120 s = execu\c{c}\~ao interrompida no limite de tempo. }
+\label{tab:tempo-nota-100000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 2,49 $\pm$ 0,72 & 23.101* & 11.263 $\pm$ 152,4 \\
+Selection Sort & 22.055* & 21.118* & 13.934 $\pm$ 63,4 \\
+Quick Sort (piv\^o: primeiro) & 40,8 $\pm$ 0,19 & 33,3 $\pm$ 1,37 & 17,8 $\pm$ 0,56 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 22,2 $\pm$ 0,07 & 19,4 $\pm$ 0,09 & 18,8 $\pm$ 0,08 \\
+Quick Sort (piv\^o: aleat\'orio) & 16,4 $\pm$ 0,36 & 16,6 $\pm$ 0,07 & 18,4 $\pm$ 0,16 \\
+Merge Sort & 11,7 $\pm$ 0,47 & 12,1 $\pm$ 0,19 & 17,4 $\pm$ 0,23 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Tempo de ordena\c{c}\~ao (ms), chave nota, n = 1.000.000. M\'edia $\pm$ desvio-padr\~ao de 5 repeti\c{c}\~oes. * = execu\c{c}\~ao \'unica (acima de 20 s n\~ao se repete). $>$ 120 s = execu\c{c}\~ao interrompida no limite de tempo. }
+\label{tab:tempo-nota-1000000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 21,2 $\pm$ 0,10 & $>$ 120 s & $>$ 120 s \\
+Selection Sort & $>$ 120 s & $>$ 120 s & $>$ 120 s \\
+Quick Sort (piv\^o: primeiro) & 874,2 $\pm$ 13,3 & 666,5 $\pm$ 13,1 & 309,4 $\pm$ 37,8 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 305,2 $\pm$ 3,57 & 276,3 $\pm$ 1,06 & 346,8 $\pm$ 68,1 \\
+Quick Sort (piv\^o: aleat\'orio) & 233,9 $\pm$ 2,48 & 243,7 $\pm$ 3,30 & 293,3 $\pm$ 10,2 \\
+Merge Sort & 164,6 $\pm$ 2,88 & 189,5 $\pm$ 5,03 & 256,0 $\pm$ 9,37 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Compara\c{c}\~oes entre chaves, chave timestamp, n = 10.000. -- = execu\c{c}\~ao interrompida (contagem incompleta, n\~ao compar\'avel).}
+\label{tab:comp-timestamp-10000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 9.999 & 49.995.000 & 25.079.120 \\
+Selection Sort & 49.995.000 & 49.995.000 & 49.995.000 \\
+Quick Sort (piv\^o: primeiro) & 50.015.003 & 50.000.339 & 218.946 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 171.652 & 171.665 & 221.057 \\
+Quick Sort (piv\^o: aleat\'orio) & 183.282 & 195.233 & 194.849 \\
+Merge Sort & 69.008 & 64.612 & 120.410 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Compara\c{c}\~oes entre chaves, chave timestamp, n = 100.000. -- = execu\c{c}\~ao interrompida (contagem incompleta, n\~ao compar\'avel).}
+\label{tab:comp-timestamp-100000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 99.999 & 4.999.949.982 & 2.509.842.849 \\
+Selection Sort & 4.999.950.000 & 4.999.950.000 & 4.999.950.000 \\
+Quick Sort (piv\^o: primeiro) & 4.999.887.741 & 4.979.847.622 & 2.657.217 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 2.047.510 & 2.047.529 & 2.613.307 \\
+Quick Sort (piv\^o: aleat\'orio) & 2.540.017 & 2.534.509 & 2.434.960 \\
+Merge Sort & 853.904 & 815.271 & 1.536.417 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Compara\c{c}\~oes entre chaves, chave timestamp, n = 1.000.000. -- = execu\c{c}\~ao interrompida (contagem incompleta, n\~ao compar\'avel).}
+\label{tab:comp-timestamp-1000000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 999.999 & -- & -- \\
+Selection Sort & -- & -- & -- \\
+Quick Sort (piv\^o: primeiro) & -- & -- & 32.228.973 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 23.848.387 & 23.848.370 & 30.570.702 \\
+Quick Sort (piv\^o: aleat\'orio) & 28.557.780 & 28.349.821 & 29.766.311 \\
+Merge Sort & 10.066.432 & 9.901.311 & 18.673.976 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Compara\c{c}\~oes entre chaves, chave nota, n = 10.000. -- = execu\c{c}\~ao interrompida (contagem incompleta, n\~ao compar\'avel).}
+\label{tab:comp-nota-10000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 9.999 & 41.944.905 & 20.688.911 \\
+Selection Sort & 49.995.000 & 49.995.000 & 49.995.000 \\
+Quick Sort (piv\^o: primeiro) & 695.014 & 504.149 & 160.467 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 237.555 & 217.671 & 185.134 \\
+Quick Sort (piv\^o: aleat\'orio) & 162.911 & 156.347 & 157.933 \\
+Merge Sort & 69.008 & 74.069 & 114.662 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Compara\c{c}\~oes entre chaves, chave nota, n = 100.000. -- = execu\c{c}\~ao interrompida (contagem incompleta, n\~ao compar\'avel).}
+\label{tab:comp-nota-100000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 99.999 & 4.189.111.268 & 2.083.985.725 \\
+Selection Sort & 4.999.950.000 & 4.999.950.000 & 4.999.950.000 \\
+Quick Sort (piv\^o: primeiro) & 9.194.559 & 6.563.215 & 1.939.256 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 3.171.907 & 2.773.819 & 2.189.602 \\
+Quick Sort (piv\^o: aleat\'orio) & 2.078.158 & 1.972.618 & 1.944.931 \\
+Merge Sort & 853.904 & 963.029 & 1.455.294 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Compara\c{c}\~oes entre chaves, chave nota, n = 1.000.000. -- = execu\c{c}\~ao interrompida (contagem incompleta, n\~ao compar\'avel).}
+\label{tab:comp-nota-1000000}
+\begin{tabular}{lrrr}
+\hline
+Algoritmo & Ordenado & Reverso & Aleat\'orio \\
+\hline
+Insertion Sort & 999.999 & -- & -- \\
+Selection Sort & -- & -- & -- \\
+Quick Sort (piv\^o: primeiro) & 114.630.355 & 81.850.764 & 22.550.711 \\
+Quick Sort (piv\^o: mediana de tr\^es) & 35.794.346 & 32.120.205 & 25.066.370 \\
+Quick Sort (piv\^o: aleat\'orio) & 22.531.691 & 22.564.719 & 22.025.735 \\
+Merge Sort & 10.066.432 & 10.853.908 & 17.613.034 \\
+\hline
+\end{tabular}
+\end{table}
