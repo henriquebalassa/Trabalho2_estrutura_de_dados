@@ -6,16 +6,7 @@ package ordenacao;
  * Ideia (dividir para conquistar): divide o vetor ao meio, ordena cada metade do mesmo
  * jeito e depois INTERCALA as duas metades já ordenadas em um vetor só.
  *
- * Por que foi o segundo algoritmo eficiente escolhido:
- *  - O(n log n) em TODOS os casos (melhor, médio e pior). Não existe um "padrão de entrada
- *    ruim": o desempenho não depende de pivô nem da ordem dos dados.
- *  - É estável (chaves iguais mantêm a ordem original), o que o Quick Sort não garante.
- *  - Conta comparações da mesma forma que os outros, o que permite comparar as métricas.
- *    (O Radix Sort, por exemplo, não faz comparações entre chaves.)
- *  - Custo: precisa de memória extra, um vetor auxiliar com metade do tamanho (O(n)).
- *
- * Pilha: a recursão divide ao meio, então a profundidade é log2(n) (cerca de 20 para um
- * milhão de registros). Não há risco de estourar a pilha.
+ 
  */
 public class MergeSort extends Ordenador {
 
