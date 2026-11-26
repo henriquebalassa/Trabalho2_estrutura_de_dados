@@ -6,10 +6,7 @@ package ordenacao;
  * Ideia: a cada passo, procura o MENOR elemento da parte ainda não ordenada e troca ele
  * com o primeiro dessa parte. A parte ordenada cresce uma posição por vez.
  *
- * Complexidade: sempre O(n²) em comparações, em qualquer padrão de entrada, porque ele
- * sempre varre todo o resto do vetor (exatamente n(n-1)/2 comparações). Em compensação faz
- * poucas movimentações: no máximo n-1 trocas.
- * Não é estável: a troca pode passar um elemento por cima de outro de chave igual.
+ 
  */
 public class SelectionSort extends Ordenador {
 
