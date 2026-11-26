@@ -8,23 +8,7 @@ import java.util.Random;
  * Ideia: escolhe um PIVÔ e reorganiza o vetor de modo que os menores fiquem de um lado
  * e os maiores do outro (particionamento). Depois ordena cada lado do mesmo jeito.
  *
- * Estratégia de pivô (é o que decide o desempenho):
- *  - PRIMEIRO: usa o primeiro elemento. Simples, mas com a entrada já ordenada ou reversa o
- *    pivô é sempre o menor (ou o maior), a divisão fica 1 contra n-1 e o custo vira O(n²).
- *  - MEDIANA_DE_TRES: usa a mediana entre o primeiro, o do meio e o último. Resolve as
- *    entradas ordenada e reversa, que passam a dividir ao meio.
- *  - ALEATORIO: sorteia o pivô (semente fixa). Nenhum padrão de entrada é sempre ruim.
- *
- * Particionamento de Hoare: dois índices andam um em direção ao outro e PARAM em chaves
- * iguais ao pivô. Isso divide bem os vetores com muitas chaves repetidas (a chave NOTA
- * tem só 10 valores). O particionamento de Lomuto, mais simples, degenera em O(n²) quando
- * há muita chave igual.
- *
- * Pilha: a recursão é feita só na MENOR das duas partes e a maior vira um laço. Assim a
- * profundidade da recursão fica abaixo de log2(n), mesmo no pior caso, e não estoura a pilha.
- *
- * Complexidade: melhor e médio caso O(n log n); pior caso O(n²) (pivô ruim).
- * Não é estável.
+
  */
 public class QuickSort extends Ordenador {
 
