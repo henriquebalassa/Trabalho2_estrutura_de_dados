@@ -23,17 +23,7 @@ import java.util.Set;
  *   --limite-rep=20                    se uma execução passar disso, não repete (inviável)
  *   --saida=resultados/tabelas         pasta de saída (resultados.csv e ambiente.txt)
  *
- * Critérios (devem aparecer no artigo):
- *  - Mede só a ordenação: a cópia da entrada, a geração dos padrões e a verificação ficam fora.
- *  - Cada algoritmo é aquecido antes (a JVM compila o código) e a coleta de lixo é pedida
- *    antes de cada execução.
- *  - Todos os algoritmos recebem a MESMA entrada (cópia), com semente fixa.
- *  - Toda execução é conferida contra a referência ordenada.
- *  - Limite de tempo: uma execução que passa de --limite é INTERRUPTADA e registrada como
- *    INTERROMPIDO (isso é medição, não estimativa). Para o mesmo algoritmo, chave e padrão,
- *    tamanhos maiores ficam como NAO_EXECUTADO.
- *  - Repetições: média e desvio-padrão amostral. Execuções acima de --limite-rep não são
- *    repetidas.
+
  */
 public class Benchmark {
 
